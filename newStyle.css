@@ -99,6 +99,11 @@ main{
     display: flex;
     flex-direction: column;
     width: 35%; 
+    transition: all 1.5s;
+}
+
+.tipo:hover{
+    transform: scale(1.05);     
 }
 
 
