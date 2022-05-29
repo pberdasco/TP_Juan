@@ -123,6 +123,7 @@ main{
         padding: 5% 0 0 0;
     }
 }
+/******* agregado para probar *******/
 
 /*========================================================================================*/
 /*                                     Main Tienda - formato grilla                       */
@@ -131,15 +132,16 @@ main{
 }
 
 .difusor1{
-    grid-area: g_difusor1 
+    grid-area: g_difusor1 ;
+    transform: translate(px, 20px);
     
 }
 
 .difusor2{
-    grid-area: g_difusor2 
+    grid-area: g_difusor2 ;
 }
 .difusor3{
-    grid-area: g_difusor3 
+    grid-area: g_difusor3 ;
 }
 
 .tituloAceites{
@@ -153,6 +155,10 @@ main{
 }
 .aceite3{
     grid-area: g_aceite3;
+}
+
+.grillaDifusoresYAceites div img :hover{
+    transform: translate(px, 20px);
 }
 
 .grillaDifusoresYAceites{
