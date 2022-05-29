@@ -92,7 +92,6 @@ main{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-
 }
 
 .tipo{
@@ -109,6 +108,8 @@ main{
 
 .img--tipoProductos {
     width: 100%;
+    border: 2px solid rgb(162, 189, 115) ;
+    border-radius: 10% ;
 }
 
 
