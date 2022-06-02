@@ -18,47 +18,41 @@ section {
 
 
 /* ======================  Header : Logo + Nav ======================= */
-#header{
-    display: flex;
-    flex-wrap: wrap;
-    /* background-color:rgb(162, 189, 115); */
+.header__look{
     background-image: linear-gradient(to right, rgb(162, 189, 115), rgb(71, 99, 22));
-    position:sticky;
-    top:0px;
-    justify-content: space-between;
-    align-items: center;
+    margin: 0;
+    padding: 0;
 }
 
-.menu{
-    list-style-type: none;     
-    display: flex;
-}
-
-.menu li{
-    display: flex;
-}
-
-.menu li a{
-    text-decoration: none;
-    width: 100px;
-    align-self: center;
+.nav__color{
     color: brown;
     font-size: 20px;
-    margin: 0px 10px; 
+}
+.nav__color:hover{
+    color:rgba(255, 255, 255)
 }
 
-.menu li a:hover{
-   color:black ;
-   font-size: 25px;
+.nav__right{
+    margin-right: 20px;
 }
 
-@media screen and (max-width:480px){
-    .menu{
-        flex-direction: column;
-        justify-content: flex-end;
-    }
-   
+.navbar-nav li{
+    padding-left: 20px;
+    padding-right: 20px;
 }
+
+/* Al cambiar el color (sin usar fg-light, etc) la hamburguesa deja de verse.
+   Consultado en internet (geeksforgeeks.org y otros) se recomienda modificar las siguientes 2 clases
+   la primera cambia el color del borde de la hamburguesa y la segunda -en el campo stroke- las lineas de corte */
+.toggler__color.navbar-toggler {  
+    border-color: rgb(165, 42, 42);
+    margin-right: 20px;
+} 
+.toggler__color .navbar-toggler-icon {  
+    background-image: url(
+"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(165, 42, 42, 0.8)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
 
 /* ========================== Main ==========================*/
 /*   aplica a: index y contacto                              */
