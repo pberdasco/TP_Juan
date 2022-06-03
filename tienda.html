@@ -4,64 +4,243 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tienda señor x</title>
+    <title>HUMIDIFICADOR</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500;700&display=swap" rel="stylesheet">
-
+    
     <link rel="shortcut icon" href="./imagenes/momosha - logo.png">
-    <link rel="stylesheet" href="./style.css">
     <script src="https://kit.fontawesome.com/aa81b98056.js" crossorigin="anonymous"></script>
     
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-    <header id="header">
-        <img class="header__img" src="./imagenes/tineda momosha.png" alt="logo"> 
-        <nav>            
-            <ul class="menu">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="tienda.html">Tienda</a> </li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>     
+    <header>
+        <nav class="navbar fixed-top navbar-expand-md header__look">  
+            <div class="container-fluid header__look">
+              <a class="navbar-brand" href="./index.html"><img class="header__img" src="./imagenes/tineda momosha.png" alt="logo"> </a>
+              <button class="navbar-toggler toggler__color" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto"> 
+                    <li class="nav-item">
+                        <a class= "nav-link active nav__color" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle nav__color" href="tienda.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Tienda</a> 
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="./tienda.html#productos">Productos</a></li>
+                            <li><a class="dropdown-item" href="./tienda.html#ofertasDifusores">Ofertas</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class= "nav-link nav__color" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>  
     </header>
 
-    <main class="grillaDifusoresYAceites">
-            <h2 class="tituloDifusores">Difusores</h2>
-            <div class="difusor1">
-                <img class= "imagen" src="./imagenes/difusor 1.png" width=460 hight=300 alt="mistery">
-                <h5>Mistery</h6>
-                <h6>$3.600</h5>
-            </div>
-            <div class="difusor2">
-                <img class= "imagen" src="./imagenes/difusor 3.png" width=460 hight=300  alt="neck">
-                <h5>Neck</h6>
-                <h6>$4.950</h5>
-                </div>
-            <div class="difusor3">
-                <img class= "imagen" src="./imagenes/difusor 2.png" width=460 hight= 300  alt="classic">
-                <h5>Classic</h6>
-                <h6>$3.500</h5>
-            </div>
+    <main>                                                         
+        <section id="productos">
+            <h2 class="tituloDifusores">Nuestros Productos</h2>
 
-            <h2 class="tituloAceites">Aceites</h2>
-            <div class="aceite1">
-                <img class= "imagen" src="./imagenes/aceites 1.png" width=460 hight=300  alt="azahar">
-                <h5>Aceite esencial de Azahar 10cc</h6>
-                <h6>$1.000</h5>
+            <div class = "container-fluid row">
+                
+                <div class="col-lg-1 col-md-1 col-sm-1"> </div>
+                <div class="col-lg-4 col-md-4 col-sm-5">
+                    <div id="carouselDifusor" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                            <div class="card myCard">
+                                    <h5 class="card-header white">Mystery</h5>
+                                    <img class= "d-block w-100" src="./imagenes/difusor 1.png"  alt="mistery">
+                                    <div class="card-body white"> 
+                                        <div class = "container row">                           
+                                            <div class="col-lg-6 col-md-6">                            
+                                                <h5>$6.700</h5>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6">
+                                                <a href="#" class="btn btn-primary">Comprar</a>
+                                            </div>     
+                                        </div>
+                                    </div>                  
+                                </div> 
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card myCard">
+                                    <h5 class="card-header white">Neck</h5>
+                                    <img class= "d-block w-100" src="./imagenes/difusor 2.png"  alt="mistery">
+                                    <div class="card-body white">
+                                        <div class = "container row">
+                                            <div class="col-lg-6 col-md-6">                            
+                                                <h5>$5.600</h5>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6">
+                                                <a href="#" class="btn btn-primary">Comprar</a>
+                                            </div>          
+                                        </div>
+                                    </div>                 
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card myCard">
+                                    <h5 class="card-header white">Classic</h5>
+                                    <img class= "d-block w-100" src="./imagenes/difusor 3.png"  alt="mistery">
+                                    <div class="card-body white">
+                                        <div class = "container row">
+                                            <div class="col-lg-6 col-md-6">                            
+                                                <h5>$4.500</h5>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6">
+                                                <a href="#" class="btn btn-primary">Comprar</a>
+                                            </div>          
+                                        </div>
+                                    </div>                 
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselDifusor" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselDifusor" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-2 col-sm-1"> </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-5">
+                    <div id="carouselAceite" class="carousel slide" data-bs-ride="carousel">
+
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                            <div class="card myCard">
+                                    <h5 class="card-header white">Aceite esencial de Azahar 10cc</h5>
+                                    <img class= "d-block w-100 myCarouselImg" src="./imagenes/aceite-azahar.png"  alt="mistery">
+                                    <div class="card-body white"> 
+                                        <div class = "container row">                           
+                                            <div class="col-lg-6 col-md-6">                            
+                                                <h5>$2.200</h5>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6">
+                                                <a href="#" class="btn btn-primary">Comprar</a>
+                                            </div>     
+                                        </div>
+                                    </div>                  
+                                </div> 
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card myCard">
+                                    <h5 class="card-header white">Aceite esencial de Eucalipto 10cc</h5>
+                                    <img class= "d-block w-100 myCarouselImg" src="./imagenes/aceite-eucalipto.png"  alt="mistery">
+                                    <div class="card-body white">
+                                        <div class = "container row">
+                                            <div class="col-lg-6 col-md-6">                            
+                                                <h5>$3.600</h5>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6">
+                                                <a href="#" class="btn btn-primary">Comprar</a>
+                                            </div>          
+                                        </div>
+                                    </div>                 
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card myCard">
+                                    <h5 class="card-header white">Aceite esencial de Limon 10cc</h5>
+                                    <img class= "d-block w-100 myCarouselImg" src="./imagenes/aceite-limon.png"  alt="mistery">
+                                    <div class="card-body white">
+                                        <div class = "container row">
+                                            <div class="col-lg-6 col-md-6">                            
+                                                <h5>$4.100</h5>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6">
+                                                <a href="#" class="btn btn-primary">Comprar</a>
+                                            </div>          
+                                        </div>
+                                    </div>                 
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselAceite" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselAceite" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+
             </div>
-            <div class="aceite2">
-                <img class= "imagen" src="./imagenes/aceites 2.png" width=460 hight=300  alt="eucalipto">
-                <h5>Aceite esencial de Eucalipto 10cc</h6>
-                <h6>$730</h5>
-            </div>           
-            <div class="aceite3">
-                <img class= "imagen" src="./imagenes/aceite limon.png" width=460 hight=300  alt="limon">
-                <h5>Aceite Esencial de Limon 10cc</h6>
-                <h6>$770</h5>
-            </div>                                                    
-      
+        </section>
+
+
+        <section id="ofertasDifusores">
+            <h2 class="tituloDifusores">Ofertas Difusores</h2>
+            <div class = "container row">
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <div class="card">
+                        <h5 class="card-header white">Mystery</h5>
+                        <img class= "d-block w-100" src="./imagenes/difusor 1.png"  alt="mistery">
+                        <div class="card-body white"> 
+                            <div class = "container row">                           
+                                <div class="col-lg-6 col-md-6">                            
+                                    <h5>$4.000</h5>
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                    <a href="#" class="btn btn-primary">Comprar</a>
+                                </div>     
+                            </div>
+                        </div>                  
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <div class="card">
+                        <h5 class="card-header white">Neck</h5>
+                        <img class= "d-block w-100" src="./imagenes/difusor 2.png"  alt="mistery">
+                        <div class="card-body white">
+                            <div class = "container row">
+                                <div class="col-lg-6 col-md-6">                            
+                                    <h5>$3.600</h5>
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                    <a href="#" class="btn btn-primary">Comprar</a>
+                                </div>          
+                            </div>
+                        </div>                 
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <div class="card">
+                        <h5 class="card-header white">Classic</h5>
+                        <img class= "d-block w-100" src="./imagenes/difusor 3.png"  alt="mistery">
+                        <div class="card-body white">
+                            <div class = "container row">
+                                <div class="col-lg-6 col-md-6">                            
+                                    <h5>$4.100</h5>
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                    <a href="#" class="btn btn-primary">Comprar</a>
+                                </div>          
+                            </div>
+                        </div>                 
+                    </div>
+                </div>
+            </div>
+        </section>       
     </main>
 
     <footer>
@@ -73,6 +252,10 @@
         <a href="https://www.instagram.com/p/CdeG6c1PZK1/?utm_source=ig_web_copy_link" target="_blank"><i class="fa-brands fa-instagram"></i></i></a>
         -->
     </footer>
+
+<!-- Bundle bootstrap - js -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
 </body>
 </html>
