@@ -27,15 +27,15 @@
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto nav__right"> 
+                <ul class="navbar-nav ms-auto"> 
                     <li class="nav-item">
                         <a class= "nav-link active nav__color" aria-current="page" href="index.html">Inicio</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle nav__color" href="tienda.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Tienda</a> 
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="./tienda.html#difusores">Difusores</a></li>
-                            <li><a class="dropdown-item" href="./tienda.html#aceites">Aromas</a></li>
+                            <li><a class="dropdown-item" href="./tienda.html#productos">Productos</a></li>
+                            <li><a class="dropdown-item" href="./tienda.html#ofertasDifusores">Ofertas</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -46,35 +46,40 @@
         </nav>  
     </header>
 
-    <main class="contacto">
+    <main>
         <section>
             <h2>Contacto</h2>
-            <form class="contactos"> 
-                <input type="text" name="nombre" id="nombre" placeholder="Nombre" size="50"> <br>
-                <input type="email" name="email" id="email" placeholder="Email" size="50"><br>
-                <input type="number" name="telefono" id="telefono" placeholder="Teléfono" size="50"><br>
-                <textarea name="escribir" id="escribir" cols="60" rows="20" placeholder="Escriba aquí su mensaje"></textarea><br>
-                <input type="reset" value="Restablecer">
-                <input type="submit" value="Enviar">
-            </form>
+            <div class="contacto">
+                <form class="contactos"> 
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre" size="50"> <br>
+                    <input type="email" name="email" id="email" placeholder="Email" size="50"><br>
+                    <input type="number" name="telefono" id="telefono" placeholder="Teléfono" size="50"><br>
+                    <textarea name="escribir" id="escribir" cols="60" rows="15" placeholder="Escriba aquí su mensaje"></textarea><br>
+                    <input type="reset" value="Restablecer">
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
         </section>
 
         <section>
             <h2>Ubicación</h2>
-            <article class="contactos">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.228994667836!2d-58.447765484237536!3d-34.57307186338518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5c17bdd9757%3A0x2dec107d798e5fe6!2sAmen%C3%A1bar%20600%2C%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1651342702190!5m2!1ses!2sar" width="460" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </article>
-        </section>
+            <div class="container-fluid row">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <article class="contactos">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.228994667836!2d-58.447765484237536!3d-34.57307186338518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5c17bdd9757%3A0x2dec107d798e5fe6!2sAmen%C3%A1bar%20600%2C%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1651342702190!5m2!1ses!2sar" width="460" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </article>
+                </div>
 
-        <section>
-            <h2>Cómo Llegar</h2>
-            <p class="scrollText">Texto largo sobre como llegar Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus, fugiat consequatur nesciunt ab laboriosam ipsa veritatis inventore tenetur possimus exercitationem iure est vel ex aliquid dolor? Animi nemo aspernatur ex!
-            Nisi quaerat ab repellat cupiditate in id neque ea, accusamus temporibus alias odio voluptatem a ad aspernatur distinctio voluptatibus minima sit debitis, ratione dolor. Recusandae dolorum eum quod eos tenetur?
-            Ratione officia non ut distinctio voluptates amet maxime enim! Delectus adipisci quisquam saepe facilis maxime eveniet numquam iusto dignissimos accusantium, iure ad corrupti a consequatur quaerat sit quae veritatis obcaecati.
-            Vel, tenetur dignissimos placeat ullam sit et nemo ad quo odio explicabo, ipsam, natus ea veniam quasi sapiente eveniet atque aliquid! Fuga harum incidunt at facilis explicabo non praesentium assumenda!
-            Ipsam asperiores repellat delectus enim laudantium ducimus veritatis corrupti neque, explicabo, fuga quos. Eius impedit similique doloremque quae inventore error nulla iusto dignissimos ducimus, praesentium laudantium cumque rem doloribus maiores?
-            Nemo, consectetur! Possimus, aliquid omnis. Et debitis harum, nisi illum magnam molestiae facere aspernatur voluptatem quod exercitationem corrupti velit, ullam tenetur doloremque? Quasi accusamus hic delectus repudiandae pariatur nesciunt eius.
-            Accusauam quaerat aspernatur ipsum fugit voluptatum est obcaecati aliquid, delectus quis ut in dolorem odit ducimus excepturi perferendis? Numquam. </p>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <p class="scrollText">Texto largo sobre como llegar Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus, fugiat consequatur nesciunt ab laboriosam ipsa veritatis inventore tenetur possimus exercitationem iure est vel ex aliquid dolor? Animi nemo aspernatur ex!
+                    Nisi quaerat ab repellat cupiditate in id neque ea, accusamus temporibus alias odio voluptatem a ad aspernatur distinctio voluptatibus minima sit debitis, ratione dolor. Recusandae dolorum eum quod eos tenetur?
+                    Ratione officia non ut distinctio voluptates amet maxime enim! Delectus adipisci quisquam saepe facilis maxime eveniet numquam iusto dignissimos accusantium, iure ad corrupti a consequatur quaerat sit quae veritatis obcaecati.
+                    Vel, tenetur dignissimos placeat ullam sit et nemo ad quo odio explicabo, ipsam, natus ea veniam quasi sapiente eveniet atque aliquid! Fuga harum incidunt at facilis explicabo non praesentium assumenda!
+                    Ipsam asperiores repellat delectus enim laudantium ducimus veritatis corrupti neque, explicabo, fuga quos. Eius impedit similique doloremque quae inventore error nulla iusto dignissimos ducimus, praesentium laudantium cumque rem doloribus maiores?
+                    Nemo, consectetur! Possimus, aliquid omnis. Et debitis harum, nisi illum magnam molestiae facere aspernatur voluptatem quod exercitationem corrupti velit, ullam tenetur doloremque? Quasi accusamus hic delectus repudiandae pariatur nesciunt eius.
+                    Accusauam quaerat aspernatur ipsum fugit voluptatum est obcaecati aliquid, delectus quis ut in dolorem odit ducimus excepturi perferendis? Numquam. </p>
+                </div>
+            </div>
         </section>
     </main>
 

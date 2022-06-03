@@ -21,7 +21,7 @@ section {
 .header__look{
     background-image: linear-gradient(to right, rgb(162, 189, 115), rgb(71, 99, 22));
     margin: 0;
-    padding: 0;
+    padding: 0 10px 0 10px;
 }
 
 .nav__color{
@@ -30,10 +30,6 @@ section {
 }
 .nav__color:hover{
     color:rgba(255, 255, 255)
-}
-
-.nav__right{
-    margin-right: 20px;
 }
 
 .navbar-nav li{
@@ -55,9 +51,8 @@ section {
 
 
 /* ========================== Main ==========================*/
-/*   aplica a: index y contacto                              */
 
-main{   
+section{   
     display: flex;
     flex-direction: column;
     
@@ -69,7 +64,7 @@ main{
 
     align-items: center;
     justify-content: center;
-    padding: 0px 5%;
+    padding: 60px 5% 5px;  /* los 60 px son para separar sectios pero fundamentalmente para que el menu no tape el inicio */
 }
 
 
@@ -79,7 +74,6 @@ main{
     color:black;
     /*un minimo de blanco abajo para que se vean mejor las letras */
     background-color: rgba(255, 255, 255, 0.1);
-    
 }
 
 .tipoProductos{
@@ -123,7 +117,19 @@ main{
         padding: 5% 0 0 0;
     }
 }
-/******* agregado para probar *******/
+
+
+/*==========================================================================================*/
+/*                       Main tienda bootstrap                                              */
+.myCard{
+    margin-top: 10px;
+    min-width: 270px;
+}
+
+.myCarouselImg{
+    min-width: 270px;
+}
+
 
 /*========================================================================================*/
 /*                                     Main Tienda - formato grilla                       */
@@ -193,8 +199,6 @@ main{
     }
 }
 
-
-
 .imagen{
     width: 100%;
 }
@@ -222,6 +226,7 @@ h6 {
     border: black;
     width: 100%;
     height: 100%;
+    justify-content: center;
 }
 
 .scrollText{ 
@@ -259,4 +264,10 @@ i:hover{
     border: black;
     width: 98%;
 
+}
+
+.contacto{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
